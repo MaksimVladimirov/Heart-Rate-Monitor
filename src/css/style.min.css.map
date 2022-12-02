@@ -1,1 +1,1 @@
-{"version":3,"sources":["../scss/style.scss"],"names":[],"mappings":"AAAA,GACE,SAAA","file":"style.min.css"}
+{"version":3,"sources":["../scss/style.scss","../scss/blocks/_promo.scss"],"names":[],"mappings":"AAAA,EACE,6BAAA,CAGF,WACE,eAAA,CACA,aAAA,CCNF,OACE,gBAAA,CACA,qBAAA,CACA,wEAAA","file":"style.min.css"}
