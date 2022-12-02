@@ -7,16 +7,14 @@
 @media (max-width: 767px) {
   .benefits {
     max-height: 400px;
-    &__title {
-    }
+
     &__wrapper {
       padding: 15px;
       min-width: 180px;
       &_inside {
         margin-top: 40px;
         margin-left: 10px;
-        &:first-child {
-        }
+
         img {
           width: 50px;
           height: 50px;
@@ -37,8 +35,6 @@
   .header {
     &__logo {
       width: 200px;
-      img {
-      }
     }
     &__official {
       span {
@@ -47,33 +43,19 @@
     }
     &__phone {
       font-size: 16px;
-
-      &:hover {
-      }
-    }
-    &__contacts {
     }
   }
 
   .promo {
-    &__wrapper {
-    }
     &__header {
       font-size: 40px;
     }
     &__subheader {
       font-size: 22px;
     }
-    &__icons {
-    }
-    &__icon {
-      img {
-      }
-    }
+
     &__link {
       font-size: 16px;
-      a {
-      }
     }
   }
 
@@ -95,8 +77,6 @@
       &_inside {
         margin-top: 15px;
 
-        &:first-child {
-        }
         img {
           width: 40px;
           height: 40px;
