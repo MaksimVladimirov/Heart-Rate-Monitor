@@ -1,0 +1,88 @@
+.catalog {
+  padding-bottom: 100px;
+  &__tabs {
+    margin-top: 70px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  &__tab {
+    width: 220px;
+    height: 50px;
+    border: 2px solid #d0d0d0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    text-align: center;
+    line-height: 48px;
+    transform: skew(-25deg);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      box-shadow: 3px 3px 20px $main-color;
+      border: none;
+    }
+    div {
+      transform: skew(25deg);
+    }
+    &_active {
+      color: #fff;
+      background-color: $main-color;
+      border: none;
+    }
+  }
+  &__content {
+    margin-top: 60px;
+  }
+
+  &-item {
+    width: 303px;
+    min-height: 442px;
+    border: 2px solid #e8e8e8;
+    padding: 20px 20px 26px 20px;
+    &__img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: 140px;
+    }
+    &__subtitle {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 16px;
+      color: #0d0d0d;
+      text-align: center;
+    }
+    &__descr {
+      margin-top: 15px;
+      font-weight: 300;
+      font-size: 14px;
+      text-align: center;
+      color: #0d0d0d;
+    }
+    &__link {
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 14px;
+      color: $main-color;
+      margin-top: 10px;
+      text-align: center;
+      &:hover {
+        color: $main-color;
+      }
+    }
+    hr {
+      margin-top: 17px;
+      width: 263px;
+      height: 4px;
+      background: #e8e8e8;
+    }
+  }
+}
