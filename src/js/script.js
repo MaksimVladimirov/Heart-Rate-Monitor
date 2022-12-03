@@ -1,8 +1,8 @@
 $(document).ready(function () {
   $(".carousel__inner").slick({
-    dots: true,
+    dots: false,
     speed: 1300,
-    // adaptiveHeight: true,
+    
     prevArrow:
       '<button type="button" class="slick-prev"><img src="/src/icons/left.png" /></button>',
     nextArrow:
@@ -19,3 +19,4 @@ $(document).ready(function () {
     ],
   });
 });
+
