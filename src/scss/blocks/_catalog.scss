@@ -39,6 +39,13 @@
   }
   &__content {
     margin-top: 60px;
+    display: none;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &_active {
+      display: flex;
+    }
   }
 
   &-item {
@@ -46,11 +53,13 @@
     min-height: 442px;
     border: 2px solid #e8e8e8;
     padding: 20px 20px 26px 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
     &__img {
       display: block;
       margin: 0 auto;
       max-width: 100%;
-      height: 140px;
+      height: 200px;
     }
     &__subtitle {
       margin-top: 20px;
@@ -61,6 +70,7 @@
     }
     &__descr {
       margin-top: 15px;
+      width: 250px;
       font-weight: 300;
       font-size: 14px;
       text-align: center;
@@ -80,9 +90,87 @@
     }
     hr {
       margin-top: 17px;
-      width: 263px;
-      height: 4px;
       background: #e8e8e8;
+      margin-bottom: 21px;
+      border-bottom: none;
+    }
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__old-price {
+      font-weight: 300;
+      font-size: 14px;
+
+      text-decoration-line: line-through;
+      color: #555555;
+    }
+    &__price {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      color: #050505;
+    }
+    &__wrapper {
+      display: flex;
+      width: calc(200% + 40px);
+    }
+    &__content {
+      width: 50%;
+      margin-right: 0px;
+      transform: translateX(-100%);
+      transition: 0.5s all;
+      &_active {
+        transform: translateX(0%);
+        margin-right: 20px;
+      }
+    }
+    &__list {
+      position: relative;
+      width: 50%;
+      margin-left: 20px;
+      transform: translateX(0%);
+      padding-right: 20px;
+      transition: 0.5s all;
+      padding-left: 19px;
+      margin-bottom: 0px;
+      list-style-type: none;
+      &_active {
+        transform: translateX(-100%);
+        margin-left: 0px;
+      }
+      li {
+        position: relative;
+        font-weight: 300;
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #555555;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          background-color: $main-color;
+          left: -14px;
+          top: 7px;
+        }
+      }
+    }
+    &__back {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(calc(-50% - 19px));
+      display: block;
+      color: $main-color;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: underline;
+      text-transform: uppercase;
+      &:hover {
+        color: $main-color;
+      }
     }
   }
 }
