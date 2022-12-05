@@ -1,0 +1,46 @@
+.feed {
+  max-width: 915px;
+  max-height: 920px;
+  margin: 0 auto;
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #0d0d0d;
+  }
+  &__box {
+    margin-top: 60px;
+    display: flex;
+    &_img {
+        margin-top: 60px;
+      width: 165px;
+      height: 165px;
+    }
+    &_content {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      margin-left: 60px;
+      &-name {
+        font-weight: 700;
+        font-size: 18px;
+        color: #0d0d0d;
+        line-height: 18px;
+      }
+      &-maraf {
+        line-height: 22px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #646464;
+      }
+      &-text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #0d0d0d;
+      }
+    }
+  }
+}
