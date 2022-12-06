@@ -102,7 +102,7 @@ $(document).ready(function () {
 
   $("input[name=phone]").mask("+7(999) 999-99-99");
 
-  $("form").submit(function(e) {
+  $("form").submit(function (e) {
     e.preventDefault();
 
     if (!$(this).valid()) {
@@ -113,7 +113,7 @@ $(document).ready(function () {
       type: "POST",
       url: "mailer/smart.php",
       data: $(this).serialize(),
-    }).done(function() {
+    }).done(function () {
       $(this).find("input").val("");
 
       $("#consultation, #order").fadeOut();
@@ -123,4 +123,14 @@ $(document).ready(function () {
     });
     return false;
   });
+
+  //Smooth scroll
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $(".pageup").fadeIn();
+    } else {
+      $(".pageup").fadeOut();
+    }
+  });
+  new WOW().init();
 });

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link
       rel="stylesheet"
@@ -18,7 +19,7 @@
     <title>heart rate mononitor</title>
   </head>
   <body>
-    <section class="promo">
+    <section id="up" class="promo">
       <div class="container">
         <header class="header">
           <a class="header__logo">
@@ -81,7 +82,11 @@
           </p>
         </div>
         <div class="benefits__wrapper_inside">
-          <img src="/src/icons/heart.png" alt="" />
+          <img
+            class="benefits__wrapper_inside-animated"
+            src="/src/icons/heart.png"
+            alt=""
+          />
           <h3>Заботимся о здоровье</h3>
           <p>
             Мы работаем для того, чтобы Ваши занятия спортом шли на пользу
@@ -515,10 +520,10 @@
     <section class="feed">
       <div class="container">
         <h2 class="feed__title">отзывы клиентов</h2>
-        <div class="feed__box">
+        <div class="feed__box fadeInUp wow ">
           <img class="feed__box_img" src="/src/img/clientPhoto_1.png" alt="" />
 
-          <div class="feed__box feed__box_content">
+          <div class="feed__box feed__box_content " data-wow-duration="2s" data-wow-delay="1s">
             <div class="feed__box_content-name">Ирина Иванченко</div>
             <div class="feed__box_content-maraf">2 полумарафона</div>
             <div class="feed__box_content-text">
@@ -531,10 +536,10 @@
             </div>
           </div>
         </div>
-        <div class="feed__box">
+        <div class="feed__box fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
           <img class="feed__box_img" src="/src/img/clientPhoto_2.png" alt="" />
 
-          <div class="feed__box feed__box_content">
+          <div class="feed__box feed__box_content ">
             <div class="feed__box_content-name">Иван Сёмочкин</div>
             <div class="feed__box_content-maraf">1 полумарафон</div>
             <div class="feed__box_content-text">
@@ -547,10 +552,10 @@
             </div>
           </div>
         </div>
-        <div class="feed__box">
+        <div class="feed__box fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
           <img class="feed__box_img" src="/src/img/clientPhoto_3.png" alt="" />
 
-          <div class="feed__box feed__box_content">
+          <div class="feed__box feed__box_content ">
             <div class="feed__box_content-name">Юлия Дашкина</div>
             <div class="feed__box_content-maraf">2 полумарафона</div>
             <div class="feed__box_content-text">
@@ -630,6 +635,10 @@
       </div>
     </div>
 
+    <a href="#up" class="pageup">
+      <img src="icons/circle-chevron-up-solid.svg" alt="up" />
+    </a>
+
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -643,5 +652,6 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/wow.min.js" ></script>
   </body>
 </html>

@@ -10,25 +10,22 @@
     line-height: 30px;
     color: #0d0d0d;
   }
-  
+
   &__wrapper {
     display: block;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     max-width: 950px;
-    
-   
 
     &_inside {
       margin-top: 67px;
       margin-left: 65px;
       display: flex;
       flex-direction: column;
-      
+
       max-width: 275px;
-      
-      
+
       &:first-child {
         margin-left: 0;
       }
@@ -38,6 +35,12 @@
         height: 70px;
         margin: 0 auto;
       }
+      &-animated {
+        animation: heartbeat 2s ease infinite;
+        &:hover {
+          animation-play-state: paused;
+        }
+      }
       h3 {
         margin: 0 auto;
         margin-top: 35px;
@@ -46,7 +49,6 @@
         font-size: 18px;
         line-height: 29px;
         color: #0d0d0d;
-        
       }
       p {
         margin: 0 auto;
